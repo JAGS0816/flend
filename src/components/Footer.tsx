@@ -28,7 +28,7 @@ const Footer = () => {
 
                     <div className=" rounded-2xl shadow-xl m-5 p-12 flex flex-col space-y-10 text-center flex-1 hover:scale-110 duration-300">
                         
-                        <h2 className="text-2xl font-bold mt-9">"Construyendo juntos un futuro financiero sólido y prometedor."</h2>
+                        <h2 className="text-2xl font-bold mt-9">&quot;Construyendo juntos un futuro financiero sólido y prometedor.&quot;</h2>
                         
                     </div>
                 </div>
