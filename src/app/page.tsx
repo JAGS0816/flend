@@ -2,7 +2,6 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
 import { GithubIcon, LinkedinIcon, Mail, Minus } from "lucide-react";
 import Link from "next/link";
-import { personalInfo } from './../config/PortfolioConfig';
 import Image from "next/image";
 import Card from "@/components/Card";
 import CardHow from "@/components/CardHow";
