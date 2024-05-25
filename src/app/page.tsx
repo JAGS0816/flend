@@ -1,12 +1,13 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
-import { GithubIcon, LinkedinIcon, Mail } from "lucide-react";
+import { GithubIcon, LinkedinIcon, Mail, Minus } from "lucide-react";
 import Link from "next/link";
 import { personalInfo } from './../config/PortfolioConfig';
 import Image from "next/image";
 import Card from "@/components/Card";
 import CardHow from "@/components/CardHow";
 import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
+import CardBenefits from "@/components/CardBenefits";
 
 export default function Home() {
   return (
@@ -79,41 +80,22 @@ export default function Home() {
 
           </div>
         </div>
+        {/*Benefits*/}
+        <div className="mb-8">
+          <h2 className="text-lg font-bold mb-4 text-gray-400 pt-12">BENEFICIOS</h2>
+          <h3 className="text-5xl font-semibold mb-2 text-background py-8">¡Construye tu futuro!</h3>
+          <div className=" flex space-y-30 px-9 space-x-10 text-[#81F0E8] ">
+          {
+            [
+              ["Refinanciamiento de Deudas Estudiantiles"],
+              ["Acceso a Microcréditos Rápidos y Accesibles"],
+              ["Educación Financiera Personalizada"]
+            ].map((value, index) => (
+              <CardBenefits key={index} title={value[0]}  />
+            ))
+          }
 
-        {/* How It Works Section */}
-        <h2 className="text-3xl font-bold mb-4">¿CÓMO FUNCIONA?</h2>
-        {/* Tracking */}
-        <div className="mb-8">
-          <h3 className="text-2xl font-semibold mb-2">Refinanciamiento de Deudas Estudiantiles</h3>
-          <p className="text-lg mb-4">Diseñamos un programa de refinanciamiento pensado en ti, con tasas de interés competitivas y planes de pago flexibles para liberarte de la carga de las deudas estudiantiles.</p>
-        </div>
-        {/* Mobile */}
-        <div className="mb-8">
-          <h3 className="text-2xl font-semibold mb-2">Microcréditos para Estudiantes</h3>
-          <p className="text-lg mb-4">Obtén microcréditos rápidos y accesibles, diseñados para cubrir tus necesidades inmediatas sin complicaciones.</p>
-        </div>
-        {/* Integrations */}
-        <div className="mb-8">
-          <h3 className="text-2xl font-semibold mb-2">Educación Financiera Personalizada</h3>
-          <p className="text-lg mb-4">Aprovecha nuestros recursos y servicios de asesoramiento para aprender a gestionar tus finanzas de manera inteligente y tomar decisiones informadas sobre tu futuro financiero.</p>
-        </div>
-
-      {/* Benefits Section */}
-        <h2 className="text-3xl font-bold mb-4">BENEFICIOS</h2>
-        <div className="grid grid-cols-2 gap-4">
-          {/* Benefit 1 */}
-          <div className="flex items-center mb-4">
-            <div className="bg-primary rounded-full h-12 w-12 flex items-center justify-center text-white mr-4">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-              </svg>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Préstamos Personales</h3>
-              <p className="text-base">Accede a préstamos personales con tasas de interés competitivas y plazos flexibles, diseñados para estudiantes como tú.</p>
-            </div>
           </div>
-          {/* Add more benefits as needed */}
         </div>
       </MaxWidthWrapper>
     </>

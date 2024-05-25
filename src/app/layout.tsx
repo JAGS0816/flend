@@ -5,6 +5,7 @@ import Navbar from "@/components/NavBar";
 import Providers from "@/components/Providers";
 import { Analytics } from "@vercel/analytics/react"
 import { GoogleAnalytics } from '@next/third-parties/google'
+import Footer from "@/components/Footer";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,6 +28,7 @@ export default function RootLayout({
           <Analytics/>
           <Navbar/>
           {children}
+          <Footer/>
         </body>
       </Providers>
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || ""}/>

@@ -1,25 +1,10 @@
-import { GithubIcon, LinkedinIcon, Mail } from "lucide-react"
 
-export const personalInfo = {
-    socialNetworks: [[<GithubIcon key={1}/>, "https://github.com/JAGS0816"],
-                    [<LinkedinIcon key={2}/>, "https://www.linkedin.com/in/abrahamgs1608/"], 
-                    [<Mail key={3}/>, "mailto:abraham.gs16@outlook.com"]],
-    description: `Hello! I am an enthusiastic mechatronics engineer in my sixth semester of studies, passionate about the convergence of 
-                    mechanics, electronics, and programming. My journey and skills have allowed me to explore various areas, and currently, 
-                    I focus on the analysis, acquisition, and cleaning of data, where I have completed several projects. I also have experience 
-                    in Machine Learning and Deep Learning, creating models to solve various problems.`,
-    titles: ["Mechatronics Engineer Student", "Data Scientist", "FullStack Developer"],
-    name: "Abraham",
-    lastName: "García",
-    email: "abraham.gs16@outlook.com" //This mail is displayed on the website for contact purposes.
-}
-
-export const projectsInfo = {
+export const dashInfo = {
     projects: [
         {
             title: "Airbnb Price Prediction",
             link: "https://github.com/JAGS0816/airbnb-prediction-chrome-extension/blob/main/airbnb-price-prediction.ipynb",
-            hability: ["ds"],
+            hability: ["cb"],
             shortDesc: `Airbnb Price Prediction is a project aimed at predicting accommodation prices on Airbnb to identify whether a listing is offering a fair price or not.`,
             longDesc: `Airbnb Price Prediction project utilizes data analysis and machine learning techniques to explore various variables that may influence Airbnb accommodation prices, such as location, size, amenities, and the time of year. It aims to provide users with insights into the fairness of the prices listed on Airbnb.`,
             skills: [
@@ -34,7 +19,7 @@ export const projectsInfo = {
         {
             title: "Life Coincidences",
             link: "https://www.lifecoincidences.com/",
-            hability: ["fd", "ds"],
+            hability: ["cd", "cb"],
             shortDesc: `LifeCoincidences is a WebApp that allows you to visualize space coincidences all over the time based on your google 
             map records.`,
             longDesc: `LifeCoincidences it's an innovative web platform that enables users to compare and analyze their Google location 
@@ -54,7 +39,7 @@ export const projectsInfo = {
         {
             title: "Personal Portfolio",
             link: "https://jagsportfolio.vercel.app/",
-            hability: ["fd"],
+            hability: ["cd"],
             shortDesc: `This is my portfolio, currently it is only frontend. But it is built on Next.js so I can add my projects and deployed 
             models directly.`,
             longDesc: `This personal portfolio showcases my skills and projects with a modern and responsive design. Built using Next.js, it 
@@ -71,7 +56,7 @@ export const projectsInfo = {
         },     
         {
             title: "Web Scraper for Real Estate Agent with AWS Lambda and Cron Jobs",
-            hability: ["ws"],
+            hability: ["af"],
             shortDesc: "Development of a web scraper tool designed to extract real estate data from various websites. The scraper is configured to run periodically every night using AWS Lambda and cron jobs.",
             longDesc: "This project utilizes BeautifulSoup for web scraping to extract real estate listings from multiple websites. The extracted data is then stored in a SQL database for further analysis and retrieval. Additionally, the data can be accessed and manipulated using Excel through an ODBC connection.",
             skills: [
@@ -90,7 +75,7 @@ export const projectsInfo = {
         {
             title: "CycleGAN for Monet-Style Painting Generation using Keras",
             link: "https://github.com/JAGS0816/CycleGAN-Monet-Generator", 
-            hability: ["ds"],
+            hability: ["cb"],
             shortDesc: `Implementation of a Cycle Generative Adversarial Network (CycleGAN) using Keras to generate images with the stylistic 
             characteristics of paintings by Claude Monet.`,
             longDesc: `This project involved data preprocessing, and model training to learn the mapping between input images and 
@@ -112,7 +97,7 @@ export const projectsInfo = {
         {
             title: "Tweet Classification for Disaster Detection using RNN (Recurrent Neural Networks)",
             link: "https://github.com/JAGS0816/NLP-with-Disaster-Tweets", 
-            hability: ["ds"],
+            hability: ["cb"],
             shortDesc: `Development of a Recurrent Neural Network (RNN) model using Keras to classify tweets and predict whether they are 
             discussing a real disaster or a false alarm.`,
             longDesc: `This project encompassed preprocessing the tweet data utilizing a variety of Natural Language Processing (NLP) techniques, 
@@ -135,7 +120,7 @@ export const projectsInfo = {
         {
             title: "Automated Greenhouse",
             link: "https://github.com/JAGS0816/CAM-GREENHOUSE-CONTROL-AUTOMATION",
-            hability: ["me", "ds"],
+            hability: ["sg", "cb"],
             shortDesc: `In this project, an automated control system for greenhouse irrigation lines was developed, incorporating various 
             functionalities such as MQTT, UART, interactive dashboards, artificial intelligence for plant disease detection, soil sensing, 
             water consumption monitoring, and actuator control.`,
@@ -157,7 +142,7 @@ export const projectsInfo = {
         {
             title: "Histopathologic Cancer Detection using CNN (Convolutional Neural Networks)",
             link: "https://github.com/JAGS0816/CNN-Histopathologic-Cancer-Detection",
-            hability: ["ds"],
+            hability: ["cb"],
             shortDesc: "I developed a Convolutional Neural Network (CNN) for metastasis identification in patients through histopathological images. I performed the following tasks:",
             longDesc: "Data preprocessing, Designing the neural network architecture, Training the Neural Network, Technical report development. Tools such as Keras, sklearn, pandas, numpy, etc., were utilized.",
             skills: [
@@ -172,7 +157,7 @@ export const projectsInfo = {
         {
             title: "Design, Manufacture and Programming of Rehabilitation Machine",
             link: "https://github.com/JAGS0816/The-Box-Rehabilitation-Machine",
-            hability: ["me"],
+            hability: ["sg"],
             shortDesc: "Led the design, manufacturing, and programming of a rehabilitation machine, incorporating an electronic system for set counting and exercise execution timing.",
             longDesc: "Programming a PIC18 microcontroller using MPLAB X IDE to acquire, process, and execute various actions based on the data. Conducting the mechanical design of the machine and overseeing fabrication using wood and 3D printing techniques using software such as SolidWorks, Cura Slicer. Designing and simulating the electronic circuit on Proteus for seamless integration.",
             skills: [
@@ -190,7 +175,7 @@ export const projectsInfo = {
         },
         {
             title: "Web Scraping of Web Site 'Inmuebles24'",
-            hability: ["ws"],
+            hability: ["af"],
             shortDesc: "Utilized Web Scraping techniques, specifically through the 'inmuebles24' site, to extract and clean contact information from 5000 real estate agents. Collaborated with a real estate agent and employed libraries such as 'Selenium', 'BeautifulSoup', 'pandas', etc.",
             longDesc: "My responsibilities in this project included designing the architecture of the Scraper, cleaning the acquired data, and delivering the data in the desired format.",
             skills: [
@@ -207,7 +192,7 @@ export const projectsInfo = {
         {
             title: "Design of an Innovative Device or Furniture or Tool for the Elderly",
             link: "https://drive.google.com/file/d/1iwK9yj164xle44Hp02jlc2jBpVIP62no/view?usp=sharing",
-            hability: ["me", "ds"],
+            hability: ["sg", "cb"],
             shortDesc: "Design and statistical validation of an innovative cane to help older adults to perform various activities. Measuring different aspects of the prototype such as strength, resistance on different designs to perform factorial analysis and choose the best prototype.",
             longDesc: "My duties on this project included mechanical design of the prototypes using SolidWorks, construction of the 16 prototypes made of cardboard, and statistical testing using Minitab.",
             skills: [
@@ -223,7 +208,7 @@ export const projectsInfo = {
         {
             title: "Airbnb Price Prediction to Determine Rent Price of Apartments in Mexico City",
             link: "https://drive.google.com/file/d/1zelAUzac4k50o9IaB9mO20mbipiTNQcb/view?usp=sharing",
-            hability: ["ds"],
+            hability: ["cb"],
             shortDesc: "Develop a data analysis to determine the rental price of a room or apartment in Mexico City. Independently and self-sufficiently identify relevant patterns and interactions from the information provided by the Airbnb technology platform.",
             longDesc: "My responsibilities on this project included data cleaning and exploratory analysis using Python and pandas to identify patterns and interactions, implementation of Linear Regression using Minitab to model rental price determinants, and compilation of a comprehensive report with key findings and conclusions.",
             skills: [
@@ -238,7 +223,7 @@ export const projectsInfo = {
         },
         {
             title: "Web Scraping of Video Game Covers",
-            hability: ["ws"],
+            hability: ["af"],
             shortDesc: "Developed an algorithm for downloading video game covers and uploading them to a video game store's web server via FTP, alongside updating the corresponding database to reflect these changes.",
             longDesc: "My key contributions in this project involved designing the Scraper based on the WebPage structure using 'Xpath,' 'Python,' and 'BeautifulSoup,' creating a user-friendly interface allowing users to review and accept/reject the covers, and implementing the upload of photos to the server and updating the SQL database to reflect the changes.",
             skills: [
@@ -252,12 +237,13 @@ export const projectsInfo = {
         }   
     ],
     habilities: [
-        ["ds", "Data Science"],
-        ["ws", "Web Scraping"],
-        ["me", "Mechatronics"],
-        ["fd", "FullStack Developer"]
+        ["cb", "Convocatorias de Becas"],
+        ["af", "Afore"],
+        ["sg", "Seguros"],
+        ["cd", "Créditos"],
+        ["tj", "Tarjeta"]
     ],
-    description: `Feel free to inquire about any of the following projects. Please note that some projects may not have a link provided due to confidentiality agreements with clients. However, I'm happy to discuss their details and my contributions.`
+    description: `Variedad de servicios financieros, diseñados para adaptarse a tus necesidades y metas. Desde préstamos personales y escolares hasta tarjetas de débito y crédito, así como seguros y créditos para iniciar un negocio. Descubre cómo podemos ser tu aliado en el camino hacia una gestión financiera más sólida y exitosa.`
 }
 
 export const resumeInfo = {
