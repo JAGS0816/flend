@@ -10,8 +10,8 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Abraham García's Portfolio",
-  description: "Custom Web Scraping, Data Science, FullStack Developing and Mechatronic Engineering services.",
+  title: "Flend",
+  description: "Finance Services",
 };
 
 export default function RootLayout({
