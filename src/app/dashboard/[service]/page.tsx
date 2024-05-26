@@ -28,7 +28,7 @@ const Page = ({params}: PageProps) => {
 
     return(
         <>
-            <MaxWidthWrapper className="pt-8 pb-8">
+            <MaxWidthWrapper className="pt-8 pb-8 overflow-x-hidden ">
                 <div className="w-full text-center border-b-2 border-neutral-300 dark:border-neutral-800 space-y-2 py-2">
                     <h1 className="text-4xl font-bold mb-4 text-[#81F0E8]">¿Qué ofrecemos?</h1>
                     {
@@ -40,14 +40,14 @@ const Page = ({params}: PageProps) => {
                 }    
                 </div>
                        
-                <div className="pt-2 text-[#81F0E8] flex w-full items-center justify-center space-x-3">
+                <div className="pt-2 text-[#81F0E8] flex w-full flex-wrap items-center justify-center sm:space-x-3 overflow-x-scroll sm:overflow-x-hidden">
                     {
                         dashInfo.products
                         .map((item, key) => (
                             <div key={key}>
                                 <Link
                                 href={"/dashboard/"+item[0]}>
-                                    <Button variant={"outline"} className=" border-2 font-semibold" value={item[0]}>{item[1]}</Button>
+                                    <Button variant={"outline"} className=" border-2 font-semibold mr-2 mt-2" value={item[0]}>{item[1]}</Button>
                                 </Link>
                             </div>
                         ))

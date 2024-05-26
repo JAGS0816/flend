@@ -98,11 +98,11 @@ export default function Home() {
           <div className=" flex flex-col space-y-16 px-20">
           {
             [
-              ["Refinanciamiento de Deudas Estudiantiles", "Simplificamos el proceso de refinanciamiento de tus deudas estudiantiles. Regístrate y proporciona información sobre tus préstamos actuales. Nuestro equipo experto encontrará opciones con tasas de interés más bajas y plazos flexibles."],
-              ["Acceso a Microcréditos Rápidos y Accesibles", "Obtén ayuda financiera para gastos inesperados de manera rápida y accesible. Completa nuestra solicitud en línea y selecciona la cantidad que necesitas. Aprobaciones rápidas y sin complicados requisitos."],
-              ["Educación Financiera Personalizada", "Empoderamos a nuestros usuarios con conocimientos financieros sólidos. Ofrecemos recursos educativos personalizados y sesiones de asesoramiento financiero uno a uno. Aprende a administrar tu dinero, planificar para el futuro y tomar decisiones financieras inteligentes."]
+              ["Refinanciamiento de Deudas Estudiantiles", "Simplificamos el proceso de refinanciamiento de tus deudas estudiantiles. Regístrate y proporciona información sobre tus préstamos actuales. Nuestro equipo experto encontrará opciones con tasas de interés más bajas y plazos flexibles.", "/deudas.png"],
+              ["Acceso a Microcréditos Rápidos y Accesibles", "Obtén ayuda financiera para gastos inesperados de manera rápida y accesible. Completa nuestra solicitud en línea y selecciona la cantidad que necesitas. Aprobaciones rápidas y sin complicados requisitos.", "/credito.png"],
+              ["Educación Financiera Personalizada", "Empoderamos a nuestros usuarios con conocimientos financieros sólidos. Ofrecemos recursos educativos personalizados y sesiones de asesoramiento financiero uno a uno. Aprende a administrar tu dinero, planificar para el futuro y tomar decisiones financieras inteligentes.", "/educ.png"]
             ].map((value, index) => (
-              <CardHow key={index} title={value[0]} description={value[1]} image="/flend.png" ind={index}/>
+              <CardHow key={index} title={value[0]} description={value[1]} image={value[2]} ind={index}/>
             ))
           }
 
@@ -112,7 +112,7 @@ export default function Home() {
         <div className={`mb-8 benefits ${isVisibleBenefits ? 'animate-showIn' : ''}`}>
           <h2 className="text-lg font-bold mb-4 text-gray-400 pt-12">BENEFICIOS</h2>
           <h3 className=" text-4xl sm:text-5xl font-semibold mb-2 text-background py-8">¡Construye tu futuro!</h3>
-          <div className="flex flex-col sm:flex-row space-y-12 px-9 sm:space-x-10 text-[#81F0E8] ">
+          <div className="flex flex-col sm:flex-row space-y-12 px-9 sm:space-y-0 sm:space-x-10 text-[#81F0E8] ">
           {
             [
               ["Refinanciamiento de Deudas Estudiantiles"],

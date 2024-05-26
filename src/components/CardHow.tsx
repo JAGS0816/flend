@@ -30,6 +30,7 @@ const CardHow = ({title, description, image, ind}: {title:string, description:st
                 alt={title}
                 width={300}
                 height={300}
+                className="rounded-lg"
                 />
             </div>
         </div>
