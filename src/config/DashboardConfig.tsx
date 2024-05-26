@@ -2,246 +2,261 @@
 export const dashInfo = {
     projects: [
         {
-            title: "Airbnb Price Prediction",
-            link: "https://github.com/JAGS0816/airbnb-prediction-chrome-extension/blob/main/airbnb-price-prediction.ipynb",
-            hability: ["cb"],
-            shortDesc: `Airbnb Price Prediction is a project aimed at predicting accommodation prices on Airbnb to identify whether a listing is offering a fair price or not.`,
-            longDesc: `Airbnb Price Prediction project utilizes data analysis and machine learning techniques to explore various variables that may influence Airbnb accommodation prices, such as location, size, amenities, and the time of year. It aims to provide users with insights into the fairness of the prices listed on Airbnb.`,
-            skills: [
-                "Data Analysis with Python: Utilizing Python for efficient data analysis.",
-                "Machine Learning: Implementing machine learning algorithms for predictive modeling.",
-                "Data Cleaning: Data cleaning using Python Pandas",
-                "Feature Selection: Applying techniques of multicolinearity detection and feature engineering",
-                "Model Evaluation: Model Evaluation using relevant metrics",
+            title: "Afore Coppel",
+            link: "https://aforecoppel.com/",
+            product: ["afore"],
+            shortDesc: `Administración de fondos para el retiro con beneficios adicionales.`,
+            longDesc: `Afore Coppel ofrece servicios de administración de fondos para el retiro, ayudando a los trabajadores a planificar y asegurar su futuro financiero. Con opciones de inversión diversificadas y asesoría personalizada, Afore Coppel se enfoca en maximizar los rendimientos y proporcionar una experiencia accesible y conveniente para todos sus clientes.`,
+            keyPoints: [
+                "Diversificación de inversiones",
+                "Asesoría personalizada",
+                "Acceso en línea y aplicación móvil",
+                "Tasas competitivas",
+                "Accesibilidad a través de múltiples sucursales",
+                "Programas de educación financiera"
             ],
-            images: ["/airbnbextension.png", "/airbnbextension2.png"]
+            images: ["/coppel1.png", "/coppel2.png"]
+        },
+
+        {
+            "title": "Afore Profuturo",
+            "link": "https://afore.profuturo.mx/que-es-una-afore/quienes-tienen-afore",
+            "product": ["afore"],
+            "shortDesc": "Profuturo es una de las principales Afores en México, dedicada a la administración del ahorro para el retiro.",
+            "longDesc": "Afore Profuturo ofrece una administración eficiente del ahorro para el retiro, con soluciones personalizadas y una sólida trayectoria en el mercado. Está diseñada para aquellos que buscan una opción confiable y segura para asegurar su futuro financiero.",
+            "keyPoints": [
+                "Gestión personalizada",
+                "Sólida trayectoria",
+                "Variedad de opciones de inversión",
+                "Atención al cliente de calidad",
+                "Acceso a herramientas digitales",
+                "Diversificación de portafolios"
+            ],
+            "images": ["/profuturo1.png", "profuturo2.png"]
         },
         {
-            title: "Life Coincidences",
-            link: "https://www.lifecoincidences.com/",
-            hability: ["cd", "cb"],
-            shortDesc: `LifeCoincidences is a WebApp that allows you to visualize space coincidences all over the time based on your google 
-            map records.`,
-            longDesc: `LifeCoincidences it's an innovative web platform that enables users to compare and analyze their Google location 
-            histories with others, providing a visual and personalized experience of their matches on an interactive 3D map. 
-            The application offers a unique combination of features, from secure token purchases to detailed visualization of 
-            geospatial data.`,
-            skills: [
-                "Data Processing with Pandas: Efficient analysis of Google location history using Pandas library in Python.",
-                "AWS S3 Storage and Lambda Processing: Secure storage in Amazon S3 and efficient processing using AWS Lambda.",
-                "Serverless Architecture: Implementation of a serverless architecture with AWS Lambda for scalability.",
-                "FullStack Development with Next.js: FullStack development using Next.js, incorporating React and Node.js.",
-                "Mapbox Integration: Integration of Mapbox for advanced 3D data visualization.",
-                "Secure Transactions with Stripe: Implementation of secure payments through Stripe.",
+            "title": "Afore SURA",
+            "link": "https://afore.suramexico.com/afore/acerca-de-afore-sura.html",
+            "product": ["afore"],
+            "shortDesc": "Afore SURA maximiza el ahorro para el retiro con servicios innovadores y personalizados.",
+            "longDesc": "Afore SURA se dedica a maximizar tu ahorro a largo plazo, ofreciendo asesoría personalizada y servicios de vanguardia. Con un equipo de expertos en inversión, aseguran rendimientos atractivos y consistentes, además de múltiples canales de atención para brindar una experiencia óptima a sus clientes.",
+            "keyPoints": [
+                "Asesoría personalizada",
+                "Rendimientos atractivos",
+                "Múltiples canales de atención",
+                "Servicios digitales innovadores",
+                "Entrega cuatrimestral de estado de cuenta",
+                "Consulta de saldo en línea"
             ],
-            images: ["/lifecoincidences.png", "/lifecoincidences2.png"]
-        },
-        {
-            title: "Personal Portfolio",
-            link: "https://jagsportfolio.vercel.app/",
-            hability: ["cd"],
-            shortDesc: `This is my portfolio, currently it is only frontend. But it is built on Next.js so I can add my projects and deployed 
-            models directly.`,
-            longDesc: `This personal portfolio showcases my skills and projects with a modern and responsive design. Built using Next.js, it 
-            offers a sleek user experience with features like a dark/light theme toggle. Whether viewed on desktop or mobile devices, the 
-            portfolio ensures an optimal browsing experience.`,
-            skills: [
-                "Frontend Development",
-                "Next.js",
-                "Modern Design",
-                "Responsive Design",
-                "Theme Toggle"
-            ],
-            images: ["/portfolio.png"]
+            "images": ["/sura1.png", "/sura2.png"]
         },     
         {
-            title: "Web Scraper for Real Estate Agent with AWS Lambda and Cron Jobs",
-            hability: ["af"],
-            shortDesc: "Development of a web scraper tool designed to extract real estate data from various websites. The scraper is configured to run periodically every night using AWS Lambda and cron jobs.",
-            longDesc: "This project utilizes BeautifulSoup for web scraping to extract real estate listings from multiple websites. The extracted data is then stored in a SQL database for further analysis and retrieval. Additionally, the data can be accessed and manipulated using Excel through an ODBC connection.",
-            skills: [
-                "Python",
-                "Web Scraping",
-                "AWS Lambda",
-                "Cron Jobs",
-                "BeautifulSoup",
-                "SQL",
-                "Data Extraction",
-                "Data Storage",
-                "Data Manipulation",
+            "title": "Seguro para Mascotas BBVA",
+            "link": "https://www.bbva.mx/personas/productos/seguros/seguro-para-mascotas.html",
+            "product": ["seguros"],
+            "shortDesc": "Protege a tu mascota con coberturas y beneficios personalizados.",
+            "longDesc": "El Seguro para Mascotas BBVA te ofrece protección completa para tu perro o gato, con servicios como estética, cobertura de daños a terceros, consultas veterinarias en consultorio o a domicilio, y asistencia telefónica 24/7. Puedes personalizar el plan según las necesidades de tu mascota y contratar el seguro en línea de manera rápida y sencilla.",
+            "keyPoints": [
+                "Cobertura de una vacuna anual",
+                "Servicio veterinario a domicilio",
+                "Estética para mascotas",
+                "Cobertura de daños a terceros hasta $10,000",
+                "Asistencia telefónica 24/7",
+                "Descuentos en tiendas veterinarias"
             ],
-            images: ["/scraperrealstate.png", "/scraperrealstate2.png"]
+            "images": ["/mascotasbbva1.png", "/mascotasbbva2.png"]
         },
         {
-            title: "CycleGAN for Monet-Style Painting Generation using Keras",
-            link: "https://github.com/JAGS0816/CycleGAN-Monet-Generator", 
-            hability: ["cb"],
-            shortDesc: `Implementation of a Cycle Generative Adversarial Network (CycleGAN) using Keras to generate images with the stylistic 
-            characteristics of paintings by Claude Monet.`,
-            longDesc: `This project involved data preprocessing, and model training to learn the mapping between input images and 
-            Monet-style paintings. It also included fine-tuning the model architecture, optimizing hyperparameters, and evaluating the generated 
-            images for authenticity and fidelity to Monet's style.`,
-            skills: [
-                "Python",
-                "Deep Learning",
-                "Generative Adversarial Networks (GANs)",
-                "Convolutional Neural Networks (CNN)",
-                "Image Processing",
-                "Data Preprocessing",
-                "Model Training and Optimization",
-                "TensorFlow",
-                "Keras",
+            "title": "Seguro de Vida AXA",
+            "link": "https://www.axa.mx/seguros/vida",
+            "product": ["seguros"],
+            "shortDesc": "Protege a tus seres queridos con el Seguro de Vida AXA.",
+            "longDesc": "El Seguro de Vida AXA te brinda la estabilidad económica necesaria para proteger a tus seres queridos en caso de fallecimiento, enfermedades graves, invalidez o desempleo. Con opciones personalizables y beneficios adicionales como la formación de ahorro, puedes estar tranquilo sabiendo que cuentas con un respaldo sólido y confiable.",
+            "keyPoints": [
+                "Cobertura por fallecimiento",
+                "Opciones de inversión adicionales",
+                "Protección ante enfermedades graves",
+                "Cobertura por invalidez total y permanente",
+                "Opciones accesibles y personalizables",
+                "Trámites 100% digitales"
             ],
-            images: ["/cycleganmonet.png", "/cycleganmonet2.png"]
+            "images": ["/vidaaxxa1.png", "/vidaaxxa2.png"]
         },
         {
-            title: "Tweet Classification for Disaster Detection using RNN (Recurrent Neural Networks)",
-            link: "https://github.com/JAGS0816/NLP-with-Disaster-Tweets", 
-            hability: ["cb"],
-            shortDesc: `Development of a Recurrent Neural Network (RNN) model using Keras to classify tweets and predict whether they are 
-            discussing a real disaster or a false alarm.`,
-            longDesc: `This project encompassed preprocessing the tweet data utilizing a variety of Natural Language Processing (NLP) techniques, 
-            including stopword removal, lemmatization, tokenization, among others. It also involved defining the model architecture, conducting 
-             testing, and fine-tuning hyperparameters. The culmination of the project was the creation of a comprehensive technical report 
-            summarizing the methodology, and architecture.`,
-            skills: [
-                "Python",
-                "Deep Learning",
-                "Natural Language Processing (NLP)",
-                "Recurrent Neural Networks (RNN)",
-                "Text Classification",
-                "Data Preprocessing",
-                "Model Evaluation and Validation",
-                "TensorFlow",
-                "Keras",
+            title: "Seguro de Auto BBVA",
+            link: "https://www.bbva.mx/personas/productos/seguros/auto-y-moto/cotizar-seguro-auto.html",
+            product: ["seguros"],
+            shortDesc: "Obtén tu seguro de auto con BBVA y disfruta de promociones exclusivas.",
+            longDesc: "El seguro de auto de BBVA te ofrece promociones imperdibles y una amplia gama de beneficios y coberturas. Desde asistencia en tiempo real hasta opciones de pago exprés en caso de siniestro, BBVA se asegura de brindarte la protección y tranquilidad que necesitas mientras conduces. Además, cuentan con una tarjeta de crédito hecha con materiales reciclados y un deducible de 0% en casos de pérdida total por robo o daños materiales.",
+            keyPoints: [
+                "Asistencia en tiempo real",
+                "Pago exprés en menos de 24 horas",
+                "Cobertura por daños de terceros sin seguro",
+                "Tarjeta de crédito ecológica disponible",
+                "Deducible de 0% en pérdida total por robo o daños materiales"
             ],
-            images: ["/rnntweets.png", "/rnntweets2.png"]
-        },   
-        {
-            title: "Automated Greenhouse",
-            link: "https://github.com/JAGS0816/CAM-GREENHOUSE-CONTROL-AUTOMATION",
-            hability: ["sg", "cb"],
-            shortDesc: `In this project, an automated control system for greenhouse irrigation lines was developed, incorporating various 
-            functionalities such as MQTT, UART, interactive dashboards, artificial intelligence for plant disease detection, soil sensing, 
-            water consumption monitoring, and actuator control.`,
-            longDesc: `This project was developed for the CAM 18 school in Chihuahua, Chihuahua. My participation in this project included 
-            collaboration on the PCB design for the hardware implementation, programming and firmware development for the ESP32 microcontroller,
-             design and training of a Convolutional Neural Network (CNN) for disease detection in tomato plants, implementation of an end-to-end 
-             IoT system, incorporating FreeRTOS and MQTT for communication, collaboration on an interactive dashboard using Node-RED for real-time
-              monitoring, and configuration and adaptation of the project to specific environmental conditions.`,
-            skills: [
-                "Collaboration on PCB design for hardware implementation",
-                "Programming and firmware development for ESP32 microcontroller",
-                "Design and training of Convolutional Neural Network (CNN) for tomato plant disease detection",
-                "Implementation of end-to-end IoT system incorporating FreeRTOS and MQTT for communication",
-                "Collaboration on interactive dashboard using Node-RED for real-time monitoring",
-                "Configuration and adaptation of project to specific environmental conditions"
-            ],
-            images: ["/greenhouse.jpg", "/greenhouse2.jpg"]
+            images: ["/autobbva1.png", "/autobbva2.png"]
         },
         {
-            title: "Histopathologic Cancer Detection using CNN (Convolutional Neural Networks)",
-            link: "https://github.com/JAGS0816/CNN-Histopathologic-Cancer-Detection",
-            hability: ["cb"],
-            shortDesc: "I developed a Convolutional Neural Network (CNN) for metastasis identification in patients through histopathological images. I performed the following tasks:",
-            longDesc: "Data preprocessing, Designing the neural network architecture, Training the Neural Network, Technical report development. Tools such as Keras, sklearn, pandas, numpy, etc., were utilized.",
-            skills: [
-                "Python",
-                "Convolutional Neural Networks (CNN)",
-                "Data Science",
-                "Deep Learning",
-                "Jupyter"
+            title: "Préstamo Personal Inmediato BBVA",
+            link: "https://www.bbva.mx/personas/productos/creditos/prestamos-personales/prestamo-personal-inmediato.html",
+            product: ["creditos"],
+            shortDesc: "Obtén un préstamo personal inmediato con BBVA para cubrir tus necesidades financieras.",
+            longDesc: "El Préstamo Personal Inmediato de BBVA es un apoyo financiero para clientes con invitación vigente. Con montos desde $3,000 hasta $1,500,000, pagos fijos quincenales o mensuales, y una tasa de interés fija durante la vigencia del préstamo, este préstamo ofrece flexibilidad y conveniencia para cubrir tus metas financieras. Además, no requiere aval ni garantía, y puedes contratar más de un préstamo según tu capacidad de pago.",
+            keyPoints: [
+                "Montos desde $3,000 hasta $1,500,000",
+                "Plazo de 6 a 72 meses",
+                "Pagos fijos quincenales o mensuales",
+                "Tasa de interés fija durante toda la vigencia del préstamo",
+                "Contratación en sucursal BBVA, cajeros automáticos, Línea BBVA, app BBVA México o bbva.mx",
+                "Cobertura geográfica en toda la República Mexicana"
             ],
-            images: ["/cnnhcd2.png", "/cnnhcd.png"]
+            images: ["/creditobbva1.png", "/creditobbva2.png"]
         },
         {
-            title: "Design, Manufacture and Programming of Rehabilitation Machine",
-            link: "https://github.com/JAGS0816/The-Box-Rehabilitation-Machine",
-            hability: ["sg"],
-            shortDesc: "Led the design, manufacturing, and programming of a rehabilitation machine, incorporating an electronic system for set counting and exercise execution timing.",
-            longDesc: "Programming a PIC18 microcontroller using MPLAB X IDE to acquire, process, and execute various actions based on the data. Conducting the mechanical design of the machine and overseeing fabrication using wood and 3D printing techniques using software such as SolidWorks, Cura Slicer. Designing and simulating the electronic circuit on Proteus for seamless integration.",
-            skills: [
-                "C Programming",
-                "3D CAD",
-                "Manufacturing",
-                "Microchip PIC",
-                "Microcontrollers",
-                "Embedded Systems",
-                "Electronics",
-                "Mechatronic Engineering",
-                "SolidWorks"
+            title: "Crédito Personal Afirme",
+            link: "https://www.afirme.com/Personas/Credito-Personal.html",
+            product: ["creditos"],
+            shortDesc: "Acércate a Afirme y haz realidad tus propósitos con un crédito personal simple y accesible.",
+            longDesc: "Con Crédito Personal Afirme, te ofrecemos un crédito simple con el cual podrás disponer de dinero en efectivo con un trámite ágil y de mínimos requisitos. Puedes elegir el plazo de tu crédito y tus mensualidades siempre serán fijas. Este crédito está dirigido a personas físicas y personas físicas con actividad empresarial y está disponible en moneda nacional.",
+            keyPoints: [
+                "Monto de crédito desde $15,000 hasta $1,000,000",
+                "Plazo de 6 a 48 meses",
+                "Tasa de interés ordinaria anual fija desde 23.00% más IVA",
+                "Mensualidades fijas",
+                "Sin aval ni garantía",
+                "Sin penalización por liquidación anticipada",
+                "Condiciones preferenciales para clientes Afirme",
+                "Estado de cuenta bimestral",
+                "Comisión por apertura del 2.5%",
+                "Seguro de vida obligatorio y opcional disponibles"
             ],
-            images: ["/thebox3.jpg", "/thebox2.jpg", "/thebox.jpg"]
+            images: ["/creditoafirme1.png", "/creditoafirme2.png"]
         },
         {
-            title: "Web Scraping of Web Site 'Inmuebles24'",
-            hability: ["af"],
-            shortDesc: "Utilized Web Scraping techniques, specifically through the 'inmuebles24' site, to extract and clean contact information from 5000 real estate agents. Collaborated with a real estate agent and employed libraries such as 'Selenium', 'BeautifulSoup', 'pandas', etc.",
-            longDesc: "My responsibilities in this project included designing the architecture of the Scraper, cleaning the acquired data, and delivering the data in the desired format.",
-            skills: [
-                "Python",
-                "Data Cleaning",
-                "Web Scraping",
-                "Automation",
-                "HTML",
-                "BeautifulSoup",
-                "Selenium"
+            title: "Crédito Personal en Línea Kubo.Financiero",
+            link: "https://www.kubofinanciero.com/prestamos-en-linea",
+            product: ["creditos"],
+            shortDesc: "Solicita tu crédito personal 100% en línea con Kubo.Financiero y obtén tu pre-aprobación en 5 minutos.",
+            longDesc: "Kubo.Financiero ofrece créditos personales en línea de forma rápida y segura, sin necesidad de aval y sin salir de casa. Con montos desde $5,000 hasta $100,000 pesos, plazos de 4 a 36 meses, y tasas de interés anual desde 16.50% hasta 83.40%, puedes obtener tu préstamo con un proceso totalmente digital y recibir el dinero en 24 horas. La plataforma está autorizada y regulada por la CNBV y CONDUSEF, garantizando confiabilidad y seguridad en todos los procesos.",
+            keyPoints: [
+                "Montos de crédito desde $5,000 hasta $100,000",
+                "Plazos de 4 a 36 meses",
+                "Tasas de interés anual desde 16.50% hasta 83.40%",
+                "Proceso completamente digital",
+                "Pre-aprobación en 5 minutos",
+                "Recepción del préstamo en 24 horas",
+                "Sin necesidad de aval",
+                "Posibilidad de liquidar el préstamo sin penalizaciones"
             ],
-            images: ["/inmueblescontact.png", "/inmueblescontact2.png"]
+            images: ["/creditokubo1.png", "/creditokubo2.png"]
         },
         {
-            title: "Design of an Innovative Device or Furniture or Tool for the Elderly",
-            link: "https://drive.google.com/file/d/1iwK9yj164xle44Hp02jlc2jBpVIP62no/view?usp=sharing",
-            hability: ["sg", "cb"],
-            shortDesc: "Design and statistical validation of an innovative cane to help older adults to perform various activities. Measuring different aspects of the prototype such as strength, resistance on different designs to perform factorial analysis and choose the best prototype.",
-            longDesc: "My duties on this project included mechanical design of the prototypes using SolidWorks, construction of the 16 prototypes made of cardboard, and statistical testing using Minitab.",
-            skills: [
-                "3D CAD",
-                "Minitab",
-                "Prototyping",
-                "Design of Experiments (DOE)",
-                "Statistical Validation",
-                "Mechanical Design"
+            title: "Tarjetas de Crédito BBVA",
+            link: "https://www.bbva.mx/personas/productos/tarjetas-de-credito.html",
+            product: ["tarjetas"], //product type between becas, afore, seguro, credito, tarjetas
+            shortDesc: "Conoce nuestras tarjetas de crédito y sus beneficios.",
+            longDesc: "BBVA ofrece una variedad de tarjetas de crédito con beneficios exclusivos, programas de recompensas y opciones de financiamiento. Descubre la tarjeta que mejor se adapta a tus necesidades y disfruta de promociones especiales, seguridad en tus compras y la comodidad de gestionar tu tarjeta desde la app BBVA.",
+            keyPoints: [
+                "Conoce en minutos la línea de crédito que podríamos darte.",
+                "Compras seguras en internet con la versión digital de tu tarjeta de crédito.",
+                "3 MSI en todas tus compras los primeros 30 días (Excepto Tarjeta Crea).",
+                "Ofertas de estreno al contratar.",
+                "Paga en miles de comercios en todo el mundo.",
+                "El % de tus compras en Puntos BBVA varía según la tarjeta."
             ],
-            images: ["/elderlyfurniture.png", "/elderlyfurniture2.png"]
+            images: ["/tarjetabbva1.png", "/tarjetabbva2.png"]
         },
         {
-            title: "Airbnb Price Prediction to Determine Rent Price of Apartments in Mexico City",
-            link: "https://drive.google.com/file/d/1zelAUzac4k50o9IaB9mO20mbipiTNQcb/view?usp=sharing",
-            hability: ["cb"],
-            shortDesc: "Develop a data analysis to determine the rental price of a room or apartment in Mexico City. Independently and self-sufficiently identify relevant patterns and interactions from the information provided by the Airbnb technology platform.",
-            longDesc: "My responsibilities on this project included data cleaning and exploratory analysis using Python and pandas to identify patterns and interactions, implementation of Linear Regression using Minitab to model rental price determinants, and compilation of a comprehensive report with key findings and conclusions.",
-            skills: [
-                "Python",
-                "Linear Regression",
-                "Gantt Charts",
-                "Data Cleaning",
-                "Minitab",
-                "Project Planning"
+            title: "Tarjetas de Crédito Santander",
+            link: "https://www.santander.com.mx/personas/tarjetas-de-credito.html",
+            product: ["tarjetas"], //product type between becas, afore, seguro, credito, tarjetas
+            shortDesc: "Encuentra la tarjeta de crédito ideal para ti.",
+            longDesc: "Santander ofrece una amplia gama de tarjetas de crédito diseñadas para satisfacer diversas necesidades financieras, desde cashback y recompensas de viajes hasta beneficios empresariales. Con opciones de tarjetas sin anualidad y programas de recompensas únicos, descubre la tarjeta que mejor se adapta a tus necesidades y disfruta de ventajas exclusivas.",
+            keyPoints: [
+                "Tarjeta LikeU: Sin anualidad, cashback por compras, personalizable.",
+                "Tarjeta Fiesta Rewards Platino: Hasta 10 Puntos Fiesta Rewards por USD gastado, descuentos en hoteles.",
+                "Tarjeta Gold: Financiación a la menor tasa, beneficios Mastercard nivel Oro.",
+                "Tarjeta Platinum: 2 Unique Points por USD gastado, 10 accesos LoungeKey anuales.",
+                "Tarjeta World Elite: 4 Unique Points por USD gastado, estacionamiento gratis en el AICM.",
+                "Tarjeta Fiesta Rewards Oro: 3 Puntos Fiesta Rewards por USD gastado, descuentos en hoteles.",
+                "Tarjeta Samsung Members: 1 Unique Point por USD gastado, descuentos en Samsung Stores.",
+                "Tarjeta PyME LikeU Business: Cashback por compras, beneficios Mastercard Platino.",
+                "Tarjeta Mastercard Corporativa: Financiamiento de 30 + 20 días adicionales, gestión de gastos empresariales.",
+                "Tarjeta Access Mastercard: 50% de descuento en estacionamiento Park'n Fly, acceso a la Sala Elite Lounge Mastercard."
             ],
-            images: ["/airbnbprice.png", "/airbnbprice2.png"]
+            images: ["/tarjetasantander1.png", "/tarjetasantander2.png"]
         },
         {
-            title: "Web Scraping of Video Game Covers",
-            hability: ["af"],
-            shortDesc: "Developed an algorithm for downloading video game covers and uploading them to a video game store's web server via FTP, alongside updating the corresponding database to reflect these changes.",
-            longDesc: "My key contributions in this project involved designing the Scraper based on the WebPage structure using 'Xpath,' 'Python,' and 'BeautifulSoup,' creating a user-friendly interface allowing users to review and accept/reject the covers, and implementing the upload of photos to the server and updating the SQL database to reflect the changes.",
-            skills: [
-                "Web Scraping",
-                "Automation",
-                "SQL",
-                "Databases",
-                "FTP Software"
+            title: "Tarjeta de Crédito Nu",
+            link: "https://nu.com.mx/credito/",
+            product: ["tarjetas"], //product type between becas, afore, seguro, credito, tarjetas
+            shortDesc: "La tarjeta de crédito sin anualidad ni cobros sorpresa.",
+            longDesc: "Nubank ofrece una tarjeta de crédito sin anualidad ni comisiones ocultas, respaldada por Mastercard. Con atención humana y sin penalizaciones por uso mínimo, la tarjeta Nu es una opción conveniente y transparente para manejar tu dinero. Además, con la nueva Tarjeta Garantizada Nu, puedes mejorar tu historial crediticio.",
+            keyPoints: [
+                "Sin anualidad",
+                "Sin penalizaciones por uso mínimo",
+                "Sin cobros por reposición si pierdes o roban tu Nu",
+                "Meses sin intereses que desafían lo establecido",
+                "Transparencia y claridad en todas las comisiones",
+                "Soporte y atención personalizada a través de su equipo de Xpeers"
             ],
-            images: ["/videogamecovers.png", "/videogamecovers2.png"]
-        }   
+            images: ["/tarjetanu1.png", "/tarjetanu2.png"]
+        },
+        {
+            title: "Beca Chavos que Inspiran",
+            link: "https://www.fundacionbbva.mx/convocatoria-becas2024/",
+            product: ["becas"], //product type between becas, afore, seguro, credito, tarjetas
+            shortDesc: "Beca para estudiantes de secundaria con alto rendimiento y necesidad económica.",
+            longDesc: "La Beca Chavos que Inspiran de la Fundación BBVA ofrece apoyo económico y formación integral para estudiantes de secundaria con excelente rendimiento académico y necesidad económica. A través de un proceso de selección que incluye un estudio socioeconómico, pruebas de talento y una ruta de aprendizaje, los beneficiarios reciben $2,000 MXN mensuales durante el ciclo escolar y acceso a mentores, formación extracurricular y oportunidades de vinculación universitaria y laboral.",
+            keyPoints: [
+                "Fecha límite para concluir el registro: 03 de junio de 2024 (solo para quienes comenzaron el registro antes del 18 de mayo de 2024).",
+                "Requisitos: Nacionalidad mexicana, estudiar en una escuela pública, promedio mínimo de 8.0, y necesidad de apoyo económico.",
+                "Documentación requerida: CURP, acta de nacimiento, promedio actual de primaria, datos de la secundaria a ingresar, CURP del tutor, identificación oficial vigente.",
+                "Pasos del proceso: Registro, estudio socioeconómico, pruebas de talento, ruta de aprendizaje.",
+                "Beneficios: $2,000 MXN mensuales, mentoría, formación en habilidades y orientación vocacional, vinculación con universidades.",
+                "Atención y soporte: 800-122-66-89 (lunes a viernes de 9:00am a 6:00pm)."
+            ],
+            images: ["/becachavos1.png", "/becachavos2.png"]
+        },
+        {
+            title: "Programa de Becas Conahcyt para Estudios de Posgrado",
+            link: "https://conahcyt.mx/becas_posgrados/",
+            product: ["becas"], //product type between becas, afore, seguro, credito, tarjetas
+            shortDesc: "Becas para estudios de posgrado en México y en el extranjero.",
+            longDesc: "El Consejo Nacional de Humanidades, Ciencias y Tecnologías (Conahcyt) formula y financia programas de becas para la formación de investigadores y científicos. Con más de 45 años de experiencia, el Programa de Becas para Estudios de Posgrado de Conahcyt es el más importante de México, ofreciendo becas para maestría, doctorado, posdoctorado y especialidades técnicas y académicas, tanto en instituciones nacionales como internacionales. Este programa fomenta la mejora continua y la calidad del posgrado, incrementando las capacidades científicas, tecnológicas, sociales y humanísticas del país.",
+            keyPoints: [
+                "Fortalecimiento de las Comunidades Científicas.",
+                "Modalidades de becas: Becas Nacionales, Becas al Extranjero, Apoyo a Madres Jefas de Familia, Fortalecimiento Académico para Indígenas, Repatriaciones y Retenciones, Becas para Estudiantes Extranjeros, Estancias Posdoctorales Nacionales, Estancias Posdoctorales y Sabáticas en el Extranjero.",
+                "Trámites y servicios: Boletín de Enlace Laboral, Trámite de Conclusión de la Beca, Consulta del Padrón de Beneficiarios, Portal de Consultas del Sistema Nacional de Posgrados (SNP).",
+                "Contraloría Social: Programa de Becas de Posgrado y Apoyos a la Calidad.",
+                "Políticas y coordinación para optimizar recursos y apoyar la formación de profesionales de alto nivel.",
+                "Más de 45 años de existencia, reconocido a nivel nacional e internacional."
+            ],
+            images: ["/becasconahcyt1.png", "/becasconahcyt2.png"]
+        },
+        {
+            title: "Educación Fundación Carlos Slim",
+            link: "https://fundacioncarlosslim.org/educacion-2/",
+            product: ["becas"], //product type between becas, afore, seguro, credito, tarjetas, educación
+            shortDesc: "Programas y recursos educativos gratuitos en línea y presenciales.",
+            longDesc: "La Fundación Carlos Slim reconoce la importancia de la educación para el desarrollo integral de una nación. A través de sus programas, la fundación brinda acceso a recursos educativos desde los primeros años de vida hasta estudios de posgrado, apoyando la formación de estudiantes y contribuyendo a la creación de una sociedad libre, saludable, justa y próspera. Los programas incluyen educación en línea, educación presencial, e innovación y desarrollo, con plataformas como Aprende, PruébaT, Khan Academy en Español, Académica, MIT OpenCourseWare, Coursera, Udacity, Edx, y muchas otras.",
+            keyPoints: [
+                "Aprende: Plataforma que integra programas digitales de educación, cultura, salud y empleo de Fundación Carlos Slim y otras instituciones, disponibles sin costo de navegación a través de Telcel en México.",
+                "PruébaT: Cursos, clases, cuestionarios interactivos, libros digitales y simuladores de exámenes que promueven habilidades matemáticas, digitales, científicas, tecnológicas y del lenguaje.",
+                "Khan Academy en Español: Videos educativos y ejercicios de práctica en Matemáticas, Ciencias, Computación, Economía y Finanzas.",
+                "Académica: Plataforma para la generación e intercambio de conocimiento entre estudiantes, docentes e investigadores.",
+                "Innovación y desarrollo: Programas enfocados en la inclusión digital y la formación libre, abierta y gratuita."
+            ],
+            images: ["/becafundacioncs1.png", "/becafundacioncs2.png"]
+        }                             
     ],
-    habilities: [
-        ["cb", "Convocatorias de Becas"],
-        ["af", "Afore"],
-        ["sg", "Seguros"],
-        ["cd", "Créditos"],
-        ["tj", "Tarjeta"]
+    products: [
+        ["becas", "Convocatorias de Becas"],
+        ["afore", "Afore"],
+        ["seguros", "Seguros"],
+        ["creditos", "Créditos"],
+        ["tarjetas", "Tarjeta"]
     ],
     description: `Variedad de servicios financieros, diseñados para adaptarse a tus necesidades y metas. Desde préstamos personales y escolares hasta tarjetas de débito y crédito, así como seguros y créditos para iniciar un negocio. Descubre cómo podemos ser tu aliado en el camino hacia una gestión financiera más sólida y exitosa.`
 }

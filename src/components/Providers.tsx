@@ -6,7 +6,7 @@ import { ThemeProvider } from "next-themes"
 const Providers = ({ children }: PropsWithChildren) => {
 
     return (
-        <ThemeProvider attribute="class" defaultTheme='system' enableSystem>
+        <ThemeProvider attribute="class" defaultTheme='light' enableSystem>
             {children}
         </ThemeProvider>
     )

@@ -1,27 +1,57 @@
+"use client"
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
-import { GithubIcon, LinkedinIcon, Mail, Minus } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
 import Card from "@/components/Card";
 import CardHow from "@/components/CardHow";
-import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
+import { RegisterLink, LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import CardBenefits from "@/components/CardBenefits";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isVisibleWhy, setIsVisibleWhy] = useState(false);
+  const [isVisibleHow, setIsVisibleHow] = useState(false);
+  const [isVisibleBenefits, setIsVisibleBenefits] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const bottom = window.innerHeight + window.scrollY;
+
+      // Verificamos si los divs están en la pantalla y actualizamos el estado correspondiente
+      const whyElement = document.querySelector('.why') as HTMLElement;
+      const whyOffset = whyElement ? whyElement.offsetTop : 0;
+      if (bottom > whyOffset) setIsVisibleWhy(bottom > whyOffset);
+
+      const howElement = document.querySelector('.how') as HTMLElement;
+      const howOffset = howElement ? howElement.offsetTop : 0;
+      if (bottom > howOffset) setIsVisibleHow(true);
+
+      const benefitsElement = document.querySelector('.benefits') as HTMLElement;
+      const benefitsOffset = benefitsElement ? benefitsElement.offsetTop : 0;
+      if (bottom > benefitsOffset) setIsVisibleBenefits(true);
+
+      console.log(whyOffset, howOffset, benefitsOffset)
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <>
       <MaxWidthWrapper className='mb-12 mt-12 flex flex-col items-center justify-center text-center overflow-x-hidden min-h-[calc(100vh-3.5rem-6rem)]'>
         <div className="flex space-x-10 items-center">
           <div className="flex flex-col justify-start items-center max-w-[calc(50%)]">
-            <div className="text-4xl sm:text-6xl xl:text-7xl font-bold font-mono w-full flex flex-col md:flex md:flex-row justify-start items-center ">
+            <div className="text-4xl sm:text-6xl xl:text-7xl font-bold font-mono w-full flex flex-col md:flex md:flex-row justify-start items-start ">
               <div className="w-max"><span className=" text-left">Somos</span></div>
               <div className="w-max">
-                <div className="text-[#81F0E8] animate-typing overflow-hidden text-left border-r-4 border-r-white dark:border-r-black w-fit pr-5 pl-4">Flend.</div>
+                <div className="text-[#81F0E8] animate-typing overflow-hidden text-left border-r-4 border-r-white dark:border-r-black w-fit pr-5 sm:pl-4">Flend.</div>
               </div>
             </div>
             
-            <div className="pt-16 text-xl z-0 text-left flex flex-col justify-start">
+            <div className="pt-16 text-sm sm:text-xl z-0 text-left flex flex-col justify-start">
               <span>Una fintech dedicada a apoyar a estudiantes en la gestión de sus finanzas, ofreciendo soluciones accesibles y personalizadas para un futuro financiero sólido.</span>
             </div>
             <div className=" flex justify-start w-full">
@@ -42,14 +72,13 @@ export default function Home() {
         </div>
       </MaxWidthWrapper>
 
-      {/* Misión */}
-      <MaxWidthWrapper className='mb-12 pt-20 flex flex-col items-center justify-center text-center bg-secondary text-neutral-800'>
+      <MaxWidthWrapper className='mb-12 pt-20 flex flex-col items-center justify-center text-center bg-secondary text-neutral-800 overflow-x-hidden'>
         {/* Why This Product Section */}
         
-        <div className="mb-8">
+        <div className={`mb-8 why ${isVisibleWhy ? 'animate-showIn' : ''}`}>
           <h2 className="text-lg font-bold mb-4 text-gray-400">¿POR QUÉ FLEND?</h2>
-          <h3 className="text-5xl font-semibold mb-2 text-background py-8">¡Potencia tu Futuro Financiero!</h3>
-          <div className=" flex space-x-8">
+          <h3 className=" text-4xl sm:text-5xl font-semibold mb-2 text-background py-8">¡Potencia tu Futuro Financiero!</h3>
+          <div className=" flex space-y-4 sm:space-y-0 sm:space-x-8 flex-col sm:flex-row">
             {
               [
                 ["Libérate", "Con Flend, accede a nuestro innovador programa de refinanciamiento diseñado específicamente para estudiantes."],
@@ -63,9 +92,9 @@ export default function Home() {
         </div>
         
         {/* How it works */}
-        <div className="mb-8">
+        <div className={`mb-8 how ${isVisibleHow ? 'animate-showIn' : ''}`}>
           <h2 className="text-lg font-bold mb-4 text-gray-400 pt-12">¿CÓMO FUNCIONA?</h2>
-          <h3 className="text-5xl font-semibold mb-2 text-background py-8">¡Potencia tu Futuro Financiero!</h3>
+          <h3 className=" text-4xl sm:text-5xl font-semibold mb-2 text-background py-8">¡Infórmate!</h3>
           <div className=" flex flex-col space-y-16 px-20">
           {
             [
@@ -80,10 +109,10 @@ export default function Home() {
           </div>
         </div>
         {/*Benefits*/}
-        <div className="mb-8">
+        <div className={`mb-8 benefits ${isVisibleBenefits ? 'animate-showIn' : ''}`}>
           <h2 className="text-lg font-bold mb-4 text-gray-400 pt-12">BENEFICIOS</h2>
-          <h3 className="text-5xl font-semibold mb-2 text-background py-8">¡Construye tu futuro!</h3>
-          <div className=" flex space-y-30 px-9 space-x-10 text-[#81F0E8] ">
+          <h3 className=" text-4xl sm:text-5xl font-semibold mb-2 text-background py-8">¡Construye tu futuro!</h3>
+          <div className="flex flex-col sm:flex-row space-y-12 px-9 sm:space-x-10 text-[#81F0E8] ">
           {
             [
               ["Refinanciamiento de Deudas Estudiantiles"],

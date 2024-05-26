@@ -87,13 +87,24 @@ const config = {
           "100%": {
             borderColor: "white"
           },
+        },
+        show: {
+          "0%": {
+            opacity: "0",
+            transform: "scale(0.5)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: " scale(1)"
+          }
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         fadeInOut: 'fadeInOut 1s ease-in-out infinite',
-        typing: "typing 2s steps(20) infinite alternate, blink 1s ease-in-out infinite"
+        typing: "typing 2s steps(20) infinite alternate, blink 1s ease-in-out infinite",
+        showIn: "show 1s ease-in-out"
       },
     },
   },

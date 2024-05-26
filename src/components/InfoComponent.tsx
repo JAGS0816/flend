@@ -23,30 +23,22 @@ import { ArrowLeft, ArrowRight, Check } from "lucide-react"
 import Link from "next/link"
   
 
-const ProjectComponent = (
+const InfoComponent = (
     {project}:
     {project: {
         title: string;
         link: string;
-        hability: string[];
+        product: string[];
         shortDesc: string;
         longDesc: string;
-        skills: string[];
+        keyPoints: string[];
         images: string[];
-    } | {
-        title: string;
-        hability: string[];
-        shortDesc: string;
-        longDesc: string;
-        skills: string[];
-        images: string[];
-        link?: undefined;
     }}
 ) => {
 
     return(
         
-        <div className="rounded-xl border-2 p-4 max-h-[30rem] sm:max-h-[26rem] grid grid-rows-10 z-0">
+        <div className="rounded-xl border-2 p-4 max-h-[30rem] sm:max-h-[26rem] grid grid-rows-10 z-0 text-white">
             <h1 className="font-bold pb-2 row-span-1">{project.title}</h1>
             <div className="px-8 py-8 row-span-6 sm:row-span-7">
                 {project.images && project.images.length > 0 && (
@@ -59,7 +51,7 @@ const ProjectComponent = (
                     />
                 )}
             </div>
-            <div className="text-sm flex row-span-3 sm:row-span-2 items-start 2xl:items-center overflow-y-hidden">
+            <div className="text-sm flex row-span-3 sm:row-span-2 items-start 2xl:items-center overflow-y-hidden justify-between">
                 <p>{project.shortDesc}</p>
             
                 <Drawer>
@@ -68,10 +60,10 @@ const ProjectComponent = (
                             See more
                         </Button>
                     </DrawerTrigger>
-                    <DrawerContent>
+                    <DrawerContent className=" border-0">
                         <DrawerHeader>
                         <DrawerTitle>{project.title}</DrawerTitle>
-                        <DrawerDescription className=" max-h-full">
+                        <DrawerDescription className=" max-h-full text-white">
                             <p>{project.longDesc}</p>
                             <div className="flex flex-col lg:flex-row pt-4 space-y-4">
                                 {project.images && project.images.length > 0 && (
@@ -99,7 +91,7 @@ const ProjectComponent = (
                                 )}
                                 <div className="w-full flex justify-start items-center text-sm">
                                     <ul>
-                                        {project.skills.map((feature, index) => (
+                                        {project.keyPoints.map((feature, index) => (
                                             <li key={index}>
                                                 <div className="flex justify-start items-center">
                                                     <Check className="w-4 h-4"/>
@@ -143,4 +135,4 @@ const ProjectComponent = (
     )
 }
 
-export default ProjectComponent
+export default InfoComponent

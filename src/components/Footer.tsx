@@ -11,7 +11,7 @@ const Footer = () => {
         <footer>
             <MaxWidthWrapper className=" p-12 my-8 space-y-4">
                 <span className="font-semibold text-3xl">Flend.</span>
-                <div className=" flex">
+                <div className=" flex overflow-x-scroll overflow-y-hidden sm:overflow-x-hidden">
                     
                     <div className=" rounded-2xl shadow-xl m-5 p-12 flex flex-col space-y-10 text-center flex-1">
                         
